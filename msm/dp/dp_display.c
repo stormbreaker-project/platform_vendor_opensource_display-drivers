@@ -2620,7 +2620,7 @@ static int dp_display_init_aux_switch(struct dp_display_private *dp)
 	dp->aux_switch_node = of_parse_phandle(dp->pdev->dev.of_node,
 			phandle, 0);
 	if (!dp->aux_switch_node) {
-		DP_WARN("cannot parse %s handle\n", phandle);
+		//DP_WARN("cannot parse %s handle\n", phandle);
 		rc = -ENODEV;
 		goto end;
 	}
